@@ -1,5 +1,11 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from 'react-icons/bs';
+import {AiFillLinkedin, AiFillYoutube, AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillTwitterCircle} from 'react-icons/ai';
+import Image from "next/image";
+import profileImg from '../public/ProfileImg.jpg';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {faSquareXTwitter} from "@fortawesome/free-brands-svg-icons";
+// import deved from '../public/dev-ed-wave.png';
 // import Image from "next/image";
 // import { Inter } from "next/font/google";
 // import styles from "@/styles/Home.module.css";
@@ -15,7 +21,7 @@ export default function Home() {
         {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bf-white px-10">
+      <main className="bf-white px-10 sm:px-10">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
           <h1 className="text-xl font-burtons">Paul James Portfolio</h1>
@@ -28,6 +34,71 @@ export default function Home() {
             href="#">Resume</a></li>
           </ul>
           </nav>
+          <div className="text-center p-10 py-10">
+            <h2 className="text-5xl py-2 text-blue-950 font-medium">Paul James</h2>
+            <h3 className="text-2xl py-2">Developer and IT specialist</h3>
+            <p className="text-md py-5 leading-8">
+              22 Year old Computer Scientist with an interest in 
+              IT hardware and backend development
+            </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-teal-600">
+            <AiFillGithub />
+            <AiFillLinkedin />
+            <AiFillYoutube />
+            <AiFillFacebook />
+            <AiFillInstagram />
+            <AiFillTwitterCircle />
+            {/* <FontAwesomeIcon icon={faSquareXTwitter} /> */}
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b w-80 h-80 mt-20 rounded-full overflow-hidden">
+            <Image src={profileImg} layout="fill" objectFit="cover"/>
+          </div>
+          <section>
+            <div>
+              <h3 className="text-3xl py-1">About Me</h3>
+              <p className="text-md py-2 leading-8 text-gray-80">
+                Ever since my youth I have always had a fascination with computers 
+                and working with and understanding them. This encouraged me to purse 
+                my education in computer science. I have taken the time to work with devices 
+                for example assembling and building my own personalized computer. I have 
+                a plethera of experience working in group and individual coding and building applications.
+              </p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <h3 className="text-lg font-medium pt-8 pb-2">Skills</h3>
+              <p className="py-2">
+                Throughout my ongoing education and field-experience and learned a wide variety of IT Skills:
+              </p>
+              <h4 className="py-4">Languages and Frameworks I use:</h4>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Java</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <h3 className="text-lg font-medium pt-8 pb-2">Skills</h3>
+              <p className="py-2">
+                Throughout my ongoing education and field-experience and learned a wide variety of IT Skills:
+              </p>
+              <h4 className="py-4">Languages and Frameworks I use:</h4>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Java</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <h3 className="text-lg font-medium pt-8 pb-2">Skills</h3>
+              <p className="py-2">
+                Throughout my ongoing education and field-experience and learned a wide variety of IT Skills:
+              </p>
+              <h4 className="py-4">Languages and Frameworks I use:</h4>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">Java</p>
+            </div>
+          </section>
         </section>
       </main>
     </div>
