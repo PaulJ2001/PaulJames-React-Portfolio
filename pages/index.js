@@ -39,9 +39,9 @@ export default function Home() {
       </Head>
       <main className="bf-white px-10 md:px-20 lg-px-40 dark:bg-black">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between md:text-3xl">
-            <Image src={atlasIcon} alt="Web Image 1" className="w-10 h-10 rounded-full md:h-20 md:w-20"/>
-            <h1 className="text-xl font-burtons md:text-3xl dark:text-white">
+          <nav className="py-10 mb-12 flex items-center justify-between md:text-3xl">
+            <Image src={atlasIcon} alt="Web Image 1" className=" mr-2 w-10 h-10 rounded-full md:h-20 md:w-20"/>
+            <h1 className="flex items-center text-xl font-burtons md:text-3xl dark:text-white">
               Paul James Portfolio
             </h1>
             <ul className="flex items-center">
