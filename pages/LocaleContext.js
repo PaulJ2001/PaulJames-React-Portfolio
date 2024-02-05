@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 const defaultValue = {
-    locale: "en",
+    locale: 'en',
     setLocale: () => {}
 }
 
