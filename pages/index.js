@@ -48,90 +48,98 @@ export default function Home() {
         {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bf-white px-10 md:px-20 lg-px-40 dark:bg-gray-900">
+      <main className="bf-white px-10 md:px-20 lg-px-40  dark:bg-gray-900">
         <LocaleContext.Provider value={{ locale, setLocale }}>
           <Suspense fallback={<Loading />}>
-            <section className="min-h-screen">
-              <nav className="py-10 mb-12 flex items-center justify-between md:text-3xl">
+            <section className="min-h-screen overflow-x-auto">
+              <nav className="py-10 mb-12 flex items-center justify-between md:text-3xl overflow-ellipsis whitespace-nowrap">
                 <Image
                   src={atlasIcon}
                   alt="Web Image 1"
                   className=" mr-2 w-10 h-10 rounded-full md:h-20 md:w-20"
                 />
                 {/* <div className="text-3xl md:text-5xl justify-center gap-2 py-3 flex items-center lg:gap-6 lg:items-center  text-blue-950 dark:text-white pt-20"> */}
-                  <a
-                    href="https://github.com/PaulJ2001"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <AiFillGithub className="text-2xl md:text-5xl text-blue-950 dark:text-white"/>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/paul-james-pj/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <AiFillLinkedin className="text-2xl md:text-5xl text-blue-950 dark:text-white"/>
-                  </a>
-                  <a
-                    href="https://www.youtube.com/channel/UCl6mxqMh5pGKK9s1uBc9cZg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <AiFillYoutube className="text-2xl md:text-5xl text-blue-950 dark:text-white"/>
-                  </a>
-                  <a
-                    href="https://www.facebook.com/people/Paul-James/pfbid0xtf45Lwydsoue93UPHuCBzHXoNX9NuNhc2ggoGeZg8bAYMtYL7hnEgncS7EopTyVl/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <AiFillFacebook className="text-2xl md:text-5xl text-blue-950 dark:text-white"/>
-                  </a>
-                  <a
-                    href="https://www.instagram.com/pauljamespj2001/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <AiFillInstagram className="text-2xl md:text-5xl text-blue-950 dark:text-white"/>
-                  </a>
-                  <a
-                    href="https://twitter.com/PaulJam43765527"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <AiFillTwitterCircle className="text-2xl md:text-5xl text-blue-950 dark:text-white"/>
-                  </a>
-                  {/* <FontAwesomeIcon icon={faSquareXTwitter} /> */}
+                <a
+                  href="https://github.com/PaulJ2001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillGithub className="text-2xl md:text-5xl text-blue-950 dark:text-white" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/paul-james-pj/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillLinkedin className="text-2xl md:text-5xl text-blue-950 dark:text-white" />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCl6mxqMh5pGKK9s1uBc9cZg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillYoutube className="text-2xl md:text-5xl text-blue-950 dark:text-white" />
+                </a>
+                <a
+                  href="https://www.facebook.com/people/Paul-James/pfbid0xtf45Lwydsoue93UPHuCBzHXoNX9NuNhc2ggoGeZg8bAYMtYL7hnEgncS7EopTyVl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillFacebook className="text-2xl md:text-5xl text-blue-950 dark:text-white" />
+                </a>
+                <a
+                  href="https://www.instagram.com/pauljamespj2001/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillInstagram className="text-2xl md:text-5xl text-blue-950 dark:text-white" />
+                </a>
+                <a
+                  href="https://twitter.com/PaulJam43765527"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillTwitterCircle className="text-2xl md:text-5xl text-blue-950 dark:text-white" />
+                </a>
+                {/* <FontAwesomeIcon icon={faSquareXTwitter} /> */}
                 {/* </div> */}
-                <h1 className="text-xl font-burtons md:text-3xl dark:text-white">
+                <h1 className="text-2xl font-burtons md:text-5xl dark:text-white">
                   Paul James Portfolio
                 </h1>
 
                 {/* <ul className="flex items-center"> */}
-                  {/* <div
+                {/* <div
                     onClick={handleChange}
                     className="cursor-pointer px-2 flex items-center text-xl md:text-3xl font-semibold text-black dark:text-white"
                   >
                     {locale.toUpperCase()}
                   </div> */}
-                  <select className="cursor-pointer mx-2 flex items-center text-xl md:text-3xl font-semibold text-black dark:text-white dark:bg-gray-900"
-                  value={locale} onChange={handleChange}>
-                    <option className="cursor-pointer px-2 flex items-center text-xl md:text-3xl font-semibold text-black dark:text-white dark:bg-gray-900"
-                    value={"en"}>En</option>
-                    <option className="cursor-pointer px-2 flex items-center text-xl md:text-3xl font-semibold text-black dark:text-white dark:bg-gray-900"
-                    value={"fr"}>Fr</option>
+                <select
+                  className="cursor-pointer mx-2 flex items-center text-2xl md:text-4xl font-semibold text-black dark:text-white dark:bg-gray-900"
+                  value={locale}
+                  onChange={handleChange}
+                >
+                  <option
+                    className="cursor-pointer px-2 flex items-center text-xl md:text-3xl font-semibold text-black dark:text-white dark:bg-gray-900"
+                    value={"en"}
+                  >
+                    En
+                  </option>
+                  <option
+                    className="cursor-pointer px-2 flex items-center text-xl md:text-3xl font-semibold text-black dark:text-white dark:bg-gray-900"
+                    value={"fr"}
+                  >
+                    Fr
+                  </option>
+                </select>
 
-                  </select>
-
-
-
-                  {/* <li> */}
-                    <BsFillMoonStarsFill
-                      onClick={() => setDarkMode(!darkMode)}
-                      className="cursor-pointer text-2xl md:text-3xl dark:text-white"
-                    />
-                  {/* </li> */}
-                  {/* <li>
+                {/* <li> */}
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="cursor-pointer text-2xl md:text-5xl dark:text-white"
+                />
+                {/* </li> */}
+                {/* <li>
                     <a
                       className="  bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                       href="#"
@@ -142,28 +150,29 @@ export default function Home() {
                 {/* </ul> */}
               </nav>
               {/* <div className="text-center p-10 py-10 "> */}
-              <div className="text-center p-10 py-10 ">
-                <h2 className="text-5xl py-2 text-blue-950 font-medium md:text-8xl dark:text-white">
-                  Paul James
-                </h2>
-                <h3 className="text-2xl py-2 md:text-4xl dark:text-white">
-                  Developer and IT specialist
-                </h3>
-                <p className="text-md py-5 leading-8 md:text-xl max-w-xl mx-auto dark:text-white">
-                  22 Year old Computer Scientist with an interest in IT hardware
-                  and backend development
-                </p>
-                <div className="dark:text-white">
-                <Welcome/>
-                </div>
-              </div>
-
-              <div className="relative mx-auto bg-gradient-to-b w-80 h-80 mt-5 mb-5 rounded-full overflow-hidden md:h-96 md:w-96">
-                {/* <Image src={profileImg} alt="Web Image 1" layout="fill" objectFit="cover" /> */}
-                <Image src={profileImg} alt="Web Image 1" />
-              </div>
               <section>
-                <div>
+                <div className="text-center p-10 py-10 ">
+                  <h2 className="text-5xl py-2 text-blue-950 font-medium md:text-7xl   lg:text-9xl dark:text-white">
+                    Paul James
+                  </h2>
+                  <h3 className="text-2xl py-2 md:text-4xl dark:text-white">
+                    Developer and IT specialist
+                  </h3>
+                  <p className="text-md py-5 leading-8 md:text-xl max-w-xl mx-auto dark:text-white">
+                    22 Year old Computer Scientist with an interest in IT
+                    hardware and backend development
+                  </p>
+                  <div className="dark:text-white">
+                    <Welcome />
+                  </div>
+                </div>
+                <div className="relative mx-auto bg-gradient-to-b w-80 h-80 mt-5 mb-5 rounded-full overflow-hidden md:h-96 md:w-96">
+                  {/* <Image src={profileImg} alt="Web Image 1" layout="fill" objectFit="cover" /> */}
+                  <Image src={profileImg} alt="Web Image 1" />
+                </div>
+              </section>
+              <section>
+                <div className="text-center">
                   <h3 className="text-3xl py-1 md:text-4xl dark:text-white">
                     About Me
                   </h3>
@@ -177,7 +186,9 @@ export default function Home() {
                     coding and building applications.
                   </p>
                 </div>
-                <div className="lg:flex gap-10">
+              </section>
+              <section>
+                <div className="flex justify-center  gap-10 ">
                   <div className="text-center shadow-lg p-10 rounded-xl my-10">
                     <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                       Skills
@@ -292,12 +303,13 @@ export default function Home() {
                       width={"100%"}
                       height={"100%"}
                       layout="responsive"
+                          // "emailjs/browser": "^3.4.0",
                     />
                   </div>
                 </div>
               </section>
               <section>
-              <div className="py-10 mt-12 text-3xl items-center justify-between md:text-5xl flex flex-wrap lg:flex-row lg:flex-wrap text-blue-950 dark:text-white">
+                <div className="py-10 mt-12 text-3xl items-center justify-between md:text-5xl flex flex-wrap lg:flex-row lg:flex-wrap text-blue-950 dark:text-white">
                   <a
                     href="https://github.com/PaulJ2001"
                     target="_blank"
