@@ -21,6 +21,7 @@ import { Suspense, useState } from "react";
 import i18n from "./i18n";
 import LocaleContext from "./LocaleContext";
 import Welcome from "./textComponents/Welcome";
+import { Contact } from "./contact.js";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {faSquareXTwitter} from "@fortawesome/free-brands-svg-icons";
 // import deved from '../public/dev-ed-wave.png';
@@ -303,9 +304,13 @@ export default function Home() {
                       width={"100%"}
                       height={"100%"}
                       layout="responsive"
-                          // "emailjs/browser": "^3.4.0",
                     />
                   </div>
+                </div>
+              </section>
+              <section>
+                <div className="flex justify-center">
+                  <Contact />
                 </div>
               </section>
               <section>
