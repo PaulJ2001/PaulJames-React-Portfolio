@@ -49,10 +49,10 @@ export default function Home() {
         {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bf-white px-10 md:px-20 lg-px-40  dark:bg-gray-900">
+      <main className=" min-h-screen flex-col bg-white container mx-auto dark:bg-gray-900 px-12 py-4">
         {/* <LocaleContext.Provider value={{ locale, setLocale }}>
           <Suspense fallback={<Loading />}> */}
-        <section className="min-h-screen overflow-x-auto">
+        <section className="">
           <nav className="py-10 mb-12 flex items-center justify-between md:text-3xl overflow-ellipsis whitespace-nowrap">
             <Image
               src={atlasIcon}

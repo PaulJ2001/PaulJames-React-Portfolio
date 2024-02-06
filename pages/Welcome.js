@@ -9,6 +9,6 @@ function Welcome() {
       <div>{t("language")}</div>
     </>
   );
-}
+};
 
 export default Welcome;
