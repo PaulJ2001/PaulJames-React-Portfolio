@@ -16,7 +16,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
+    title: "Champlain PetClinic",
     description: "Project 2 description",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
@@ -25,7 +25,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
+    title: "Rabia Patel Art E-commerce Application",
     description: "Project 3 description",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
@@ -34,7 +34,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Food Ordering Application",
+    title: "IOT Home Invasion Sensor",
     description: "Project 4 description",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
@@ -43,7 +43,7 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "React Firebase Template",
+    title: "IOS GeoGuesser App",
     description: "Authentication and CRUD operations",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
@@ -52,7 +52,7 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
+    title: "Unity 2D Platformer: Adventure _______",
     description: "Project 5 description",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
@@ -90,7 +90,7 @@ const ProjectsSection = () => {
           name="All"
           isSelected={tag === "All"}
         />
-        <ProjectTag
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
@@ -99,7 +99,7 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
-        />
+        /> */}
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
