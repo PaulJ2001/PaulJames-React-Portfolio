@@ -1,3 +1,4 @@
+
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -5,11 +6,24 @@ import NavLink from "../../outside-components/NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 
 const navLinks = [
   {
     title: "About",
     path: "#about",
+  },
+  {
+    title: "Hobbies",
+    path: "#hobbies",
+  },
+  {
+    title: "Experience",
+    path: "#experience",
+  },
+  {
+    title: "Skills",
+    path: "#skills",
   },
   {
     title: "Projects",
@@ -18,10 +32,13 @@ const navLinks = [
   {
     title: "Contact",
     path: "#contact",
-  },
+  }
+  
 ];
 
-const Navbar = () => {
+const Navbar = ({
+  //  lightMode, setLightMode 
+  }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
@@ -32,9 +49,12 @@ const Navbar = () => {
           className="text-2xl md:text-5xl text-white font-semibold"
         >
           {/* LOGO */}
-           <Image src="/images/atlas-background.jpg" 
-           className="rounded-full"
-           width={50} height={50}></Image>
+          <Image
+            src="/images/atlas-background.jpg"
+            className="rounded-full"
+            width={50}
+            height={50}
+          ></Image>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -62,6 +82,14 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+        {/* <div>
+          <BsFillMoonStarsFill
+            onClick={() => setLightMode(!lightMode)}
+            className={`cursor-pointer text-2xl md:text-5xl font-semibold ${
+              lightMode ? "text-black" : "text-white"
+            }`}
+          />
+        </div> */}
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>

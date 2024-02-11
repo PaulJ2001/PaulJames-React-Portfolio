@@ -3,11 +3,13 @@ import { Suspense, useState } from "react";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
+import SkillsSection from "./components/SkillsSection";
 import EmailSection from "./components/EmailSection";
+import WorkExperienceSection from "./components/WorkExperienceSection";
+import HobbiesSection from "./components/HobbiesSection";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 // import Head from "next/head";
-// import { BsFillMoonStarsFill } from "react-icons/bs";
 // import {
 //   AiFillLinkedin,
 //   AiFillYoutube,
@@ -39,7 +41,7 @@ import Banner from "./components/Banner";
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [lightMode, setLightMode] = useState(false);
   // function Loading() {
   //   return <>Loading</>;
   // }
@@ -50,16 +52,22 @@ export default function Home() {
   // };
 
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]">
-      <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
-        <Banner />
-        <AboutSection />
-        <ProjectsSection />
-        <EmailSection />
+    <div className={lightMode ? "light" : ""}>
+    <main className={`flex min-h-screen flex-col   
+    ${lightMode ? "bg-[ffffff]]" : "bg-[#121212]"}`} >
+      <Navbar lightMode={lightMode} setLightMode={setLightMode}/>
+      <div className="container mt-24 mx-auto px-12 py-4 font-Roboto">
+        <Banner lightMode={lightMode} />
+        <AboutSection lightMode={lightMode} />
+        <HobbiesSection lightMode={lightMode} />
+        <WorkExperienceSection lightMode={lightMode} />
+        <SkillsSection lightMode={lightMode} />
+        <ProjectsSection lightMode={lightMode} />
+        <EmailSection lightMode={lightMode} />
       </div>
       <Footer />
     </main>
+    </div>
 
     // <div className={darkMode ? "dark" : ""}>
     //   <Head>

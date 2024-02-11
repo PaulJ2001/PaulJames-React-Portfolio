@@ -38,7 +38,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("education");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -55,28 +55,28 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             I am a full stack developer currently in my final year finishing a 3 year computer science
-            path at Champlain College St-Lambert. I am currently Living in 
-            . I have experience
-            working with Java, JavaScript, React, SpringBoot, MySql, Jira,
-            HTML, CSS, and Git. I am a quick learner and I am always
-            open to expand my knowledge and skills. I am a team player and
-            I am excited to work with others to create amazing applications.
+            path at Champlain College St-Lambert, living in 
+            Longueuil, Quebec, Canada. I have experience
+            working with a wide variety of IT programming languages, frameworks and tools. I am an active listener,
+            open to expand my skills and expertise and will be engaged 
+            in a full-time IT internship from February 26th to May 10th. 
+            
           </p>
           <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
+          <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
               Education{" "}
             </TabButton>
+            {/* <TabButton
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
+            >
+              {" "}
+              Skills{" "}
+            </TabButton> */}
             {/* <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
