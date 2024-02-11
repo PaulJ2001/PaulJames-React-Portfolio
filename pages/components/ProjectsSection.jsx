@@ -104,9 +104,9 @@ const ProjectsSection = () => {
           <motion.li
             key={index}
             variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+            // initial="initial"
+            // animate={isInView ? "animate" : "initial"}
+            // transition={{ duration: 0.3, delay: index * 0.4 }}
           >
             <ProjectCard
               key={project.id}
