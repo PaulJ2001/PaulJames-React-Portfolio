@@ -1,9 +1,10 @@
 import React from "react";
 import WorkExperienceItem from "./WorkExperienceItem";
 
+
 const WorkExperienceSection = () => {
   return (
-    <section className="py-16 bg-[#121212]">
+    <section id="experience" className="py-16 bg-[#121212]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl text-center text-white font-bold mb-8">
           Work Experience
