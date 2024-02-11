@@ -33,10 +33,16 @@ const SkillsSection = () => {
               skills={["MS SQL Server, Postgre SQL, MySQL, MongoDB"]}
             />
           </div>
-          <div className="bg-[#181818] p-6 rounded-lg flex flex-col">
+          {/* <div className="bg-[#181818] p-6 rounded-lg flex flex-col">
             <SkillCategory
               title="Operating Systems"
               skills={["Windows 11/10", "Linux (on Windows Virtual Machine)", "macOS"]}
+            />
+          </div> */}
+          <div className="bg-[#181818] p-6 rounded-lg flex flex-col">
+            <SkillCategory
+              title="Interpersonal Skills"
+              skills={["Work Ethic", "Active Listening", "Teamwork", "Adaptability"]}
             />
           </div>
         </div>
