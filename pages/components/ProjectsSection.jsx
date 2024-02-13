@@ -145,7 +145,6 @@ const ProjectsSection = () => {
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
               presentationUrl={project.presentationUrl}
-              
             />
           </motion.li>
         ))}
