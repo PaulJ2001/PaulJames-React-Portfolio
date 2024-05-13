@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslation } from 'react-i18next'; 
 
 const Footer = () => {
-
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
           {/* LOGO */}
 
           </span>
-        <p className="text-slate-600"> @pauljamesportfolio.com {currentYear} All rights reserved. </p>
+        <p className="text-slate-600"> @pauljamesportfolio.com {currentYear} {t('footer.copyrightText')}. </p>
       </div>
     </footer>
   );

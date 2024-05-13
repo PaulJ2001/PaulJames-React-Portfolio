@@ -1,38 +1,48 @@
 import React from "react";
 import WorkExperienceItem from "./WorkExperienceItem";
+import { useTranslation } from 'react-i18next'; 
 
 
 const WorkExperienceSection = () => {
+  const { t } = useTranslation();
   return (
     <section id="experience" className="py-16 bg-[#121212]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl text-center text-white font-bold mb-8">
-          Work Experience
+         {t('workExperienceSection.workExpTitle')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
-          <WorkExperienceItem
-            title="Warehouse Associate"
-            company="Wiptec Inc"
-            duration="04/2023 - 08/2023"
+
+        <WorkExperienceItem
+            title= {t('workExperienceSection.imerysPosition')}
+            company= {t('workExperienceSection.imerysCompany')}
+            duration= {t('workExperienceSection.imerysDuration')}
             responsibilities={[
-              "Offered mentorship and training to new entry-level hires.",
-              "Helped facilitate the resolution of communication challenges between English-speaking and French-speaking co-workers.",
+              ...t('workExperienceSection.imerysResponsibilities').split(', '),
             ]}
           />
           <WorkExperienceItem
-            title="Warehouse Associate"
-            company="YUL5 Amazon"
-            duration="11/2022 - 04/2023"
+            title= {t('workExperienceSection.wiptecPosition')}
+            company= {t('workExperienceSection.wiptecCompany')}
+            duration= {t('workExperienceSection.wiptecDuration')}
             responsibilities={[
-              "Frequently collaborated in small, well-coordinated teams of 2-3 workers to handle the transportation of bulky packages inside the warehouse.",
+              ...t('workExperienceSection.wiptecResponsibilities').split(', '),
             ]}
           />
           <WorkExperienceItem
-            title="General Help Clerk"
-            company="Maxi Greenfield Park"
-            duration="06/2022 - 11/2022"
+            title= {t('workExperienceSection.amzPosition')}
+            company= {t('workExperienceSection.amzCompany')}
+            duration= {t('workExperienceSection.amzDuration')}
             responsibilities={[
-              "Contributed to handling challenging situations involving disruptive individuals in the parking lot, ensuring a safe and comfortable environment for potential clients and customers.",
+              ...t('workExperienceSection.amzResponsibilities').split(', '),
+            ]}
+          />
+          <WorkExperienceItem
+            title= {t('workExperienceSection.maxiPosition')}
+            company= {t('workExperienceSection.maxiCompany')}
+            duration= {t('workExperienceSection.maxiDuration')}
+            responsibilities={[
+              ...t('workExperienceSection.maxiResponsibilities').split(', '),
             ]}
           />
         </div>

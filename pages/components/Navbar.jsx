@@ -6,40 +6,76 @@ import NavLink from "../../outside-components/NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
+import { useTranslation } from 'react-i18next';
+import './languageConfig';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
-const navLinks = [
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Hobbies",
-    path: "#hobbies",
-  },
-  {
-    title: "Experience",
-    path: "#experience",
-  },
-  {
-    title: "Skills",
-    path: "#skills",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  }
-  
-];
+
+
+const LanguageSwitcher = () => {
+  const { i18n } = useTranslation()
+
+  const handleChangeLanguage = (e) => {
+      const selectedLanguage = e.target.value;
+      i18n.changeLanguage(selectedLanguage);
+  };
+
+  return (
+      <select
+          className="playfair-display"
+          value={i18n.language}
+          onChange={handleChangeLanguage}
+          style={{
+              padding: "",
+              borderRadius: "5px",
+              border: "1px solid #ced4da",
+              fontSize: "16px",
+              cursor: "pointer",
+              backgroundColor: "#ffffff",
+              color: "#000000",
+          }}
+      >
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+      </select>
+  );
+};
 
 const Navbar = ({
   //  lightMode, setLightMode 
   }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+   const {t} = useTranslation()
+
+  
+  const navLinks = [
+    {
+      title: t('navbar.about'),
+      path: "#about",
+    },
+    {
+      title: t('navbar.hobbies'),
+      path: "#hobbies",
+    },
+    {
+      title: t('navbar.experience'),
+      path: "#experience",
+    },
+    {
+      title: t('navbar.skills'),
+      path: "#skills",
+    },
+    {
+      title: t('navbar.projects'),
+      path: "#projects",
+    },
+    {
+      title: t('navbar.contact'),
+      path: "#contact",
+    }
+  ];
+  
+
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
@@ -82,6 +118,7 @@ const Navbar = ({
             ))}
           </ul>
         </div>
+        
         {/* <div>
           <BsFillMoonStarsFill
             onClick={() => setLightMode(!lightMode)}
@@ -90,6 +127,10 @@ const Navbar = ({
             }`}
           />
         </div> */}
+
+        <div>
+          <LanguageSwitcher />
+        </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>

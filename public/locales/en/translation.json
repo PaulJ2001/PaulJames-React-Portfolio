@@ -1,4 +1,113 @@
 {
-  "welcome": "Hello User",
-  "language": "English"
+
+    "aboutSection": {
+    "skillsTitle": "Skills",
+    "educationTitle": "Education",
+    "educationChamplain": "Champlain College St-Lambert - Computer Science",
+    "educationHeritage": "Heritage Regional High School",
+    "title": "About Me",
+    "aboutContent": "I am a full stack developer currently in my final year finishing a 3 year computer science path at Champlain College St-Lambert, living in Longueuil, Quebec, Canada. I have extensive experience working with various IT programming languages, frameworks, and tools, as well as financial and accounting analysis. I am an attentive listener, eager to enhance my skills and expertise. Currently, I am committed to a full-time Inventory, Finance, & IT Support position at Imerys Canada."
+    },    
+
+
+
+    "navbar": {
+      "about": "About",
+      "hobbies": "Hobbies",
+      "experience": "Experience",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+
+    "banner": {
+        "subtitle": "Full Stack Developer with Finance & Accounting Experience"
+    },
+    
+    "emailSection": {
+        "hook": "Get in Touch",
+        "cvDownloadLabel": "Download My CV",
+        "nameLabel": "Name",
+        "namePlaceholder": "Enter name",
+        "emailLabel": "Email",
+        "emailPlaceholder": "youremail@email.com",
+        "subjectLabel": "Subject",
+        "subjectPlaceholder": "Enter Subject",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Enter Message Body",
+        "sendEmailLabel": "Send Email",
+        "sentNotificationMsg": "Email sent successfully!"
+    },
+    
+    "footer":{
+        "copyrightText": "All rights reserved."
+    
+    },
+    
+    "hobbiesSection":{
+        "title": "Hobbies",
+        "hobbyName1": "Video Games",
+        "hobbyDescription1": "Though I don't get to game as much these days, when I do, it's usually in the realm of multiplayer voice chat games. Lately, I've been hooked on SCP Secret Laboratory. You might catch me on Steam as AtlasTerra, but fair warning, I'm not around much these days.",
+        "hobbyName2": "Audiobooks",
+        "hobbyDescription2": "I used to be all about reading, but these days I've switched gears to audiobooks. My taste varies wildly, from history to science-fiction, horror, and even autobiographies. Right now, I'm knee-deep in Stephen King's Pet Sematary and before that, I was listening to Eleanor Roosevelt autobiography.",
+        "hobbyName3": "Digital Organization & Tech Enthusiasm",
+        "hobbyDescription3": "When it comes to keeping my digital life in check, I'm all about saving, categorizing, and backing up my stuff on OneDrive. Setting goals and timelines for myself keeps me on track. For example back in early 2023, I splurged on building my own PC—it was a pricey and time-consuming endeavor, but totally worth it for me personally."
+    },
+
+    "projectsSection":{
+        "petClinicTitle": "Veterinarian PetClinic",
+        "petClinicDescription": "Petclinic is a Full-stack multi-section, multi-year project developed and worked on by Champlain College - St. Lambert Computer Science students like myself. The project has around 30 or more yearly student contributors every fall semester. I was part of authentication functionality in a group of 6 students. One of the key additions I did was redoing the logout functionality and session handling. The multi-layered web application catered to both veterinarians and pet owners, offering services such as scheduling and booking appointments, alongside authentication and mailing services. The project utilized Java, Spring Boot, AngularJS, SQL, and other tools like Jacoco and Docker. As well as Agile and Scrum methodologies",
+        "rpaTitle": "Rabia Patel Art",
+        "rpaDescription": "This project involved developing a comprehensive 3-layered e-commerce web application in a team of 4, with key features including a shopping cart, gallery, details page, and contact page with commission request option. The team members were myself, my sister Dahlia James, William Chalifoux handling difficult tasks, and Henna Cheung assisting with documentation. User roles like user, artist, and admin accounts were implemented with secure authentication. The checkout process utilized Square for payments, and email services were integrated. Technologies employed encompassed Java, Spring Boot, React, MySQL, alongside tools like Jira, Docker, and Git, with Agile and Scrum methodologies guiding the project.",
+        "homeInvasionTitle": "Home Invasion Detector",
+        "homeInvasionDescription": "Developed collaboratively in a team of 3, this project focused on creating a security device using Arduino Nano-based technology, featuring motion and sound sensors for precise intrusion detection. Components included the KY-037 Sound Detection Sensor and PIR Motion Sensor. Python was utilized for programming, with PyCharm as the development environment, and MongoDB for data storage. This project showcased the team's expertise in hardware integration and IoT development methodologies.",
+        "geoAppTitle": "GeoApp",
+        "geoAppDescription": "This fun little Apple Xcode application allows users to learn and quiz their knowledge on a wide variety of nations worldwide. Created as a final project for an iOS mobile development course at Champlain College St-Lambert, the app is not accessible on the App Store due to the lack of required certifications. However, there is a linked video demonstrating the app in action for those curious to see it.",
+        "adventureLyticalTitle": "AdventureLytical Coin Rush",
+        "adventureLyticalDescription": "AdventureLytical Coin Rush is a simple and enjoyable 2D platformer developed in Winter 2022 as a final project for a Unity game development course. It was created using Unity's development environment and involved a team of 4 individuals: myself, my sister Dahlia, Kamilah Raaniya Hatteea, and Brandon Lévis. The objective of the game was to navigate through 3 levels without falling off the map or touching any lethal spikes, with the option to collect coins along the way. Although the game is not available for public access, the repository is available, and a video demonstration of the gameplay is accessible by clicking the play button icon above."
+
+    },
+
+    "skillsSection":{
+        "title": "Skills",
+        "languagesFrameworksTitle": "IT Languages, Frameworks & Scripting",
+        "languagesFrameworksProficient": "Proficient: SQL, Java, Swift, HTML, Angular, React, CSS, JS, C#",
+        "languagesFrameworksFamiliar": "Familiar: ASP.NET, Python, AJAX, PHP, C++, NodeJS",
+        "itToolsTitle": "IT Tools",
+        "itToolsList": "Eclipse, Netbeans, MS Visual Studio, Postman, Lucidchart, XCode, PyCharm, Jira, Figma, Spring, IntelliJ IDEA, Git, Github, Docker",
+        "dbManagementTitle": "Database Management",
+        "dbManagementList": "MS SQL Server, Postgre SQL, MySQL, MongoDB",
+        "interpersonalSkillsTitle": "Interpersonal Skills",
+        "interpersonalSkillsList": "Work Ethic, Active Listening, Teamwork, Adaptability",
+        "financeAccountingTitle": "Finance & Accounting Fundamentals",
+        "financeAccountingList": "Financial Statement Analysis,Budgeting Basics, Cost Management, System Documentation",
+        "itSupportTitle": "Basic IT Laptop Support",
+        "itSupportList": 
+            "Printer and Fax Configuration and Setup, Software Installation & Configuration, Basic Network Troubleshooting"
+            
+
+    },
+
+    "workExperienceSection":{
+        "workExpTitle": "Work Experience",
+        "wiptecPosition": "Warehouse Associate",
+        "wiptecCompany": "Wiptec Inc",
+        "wiptecDuration": "04/2023 - 08/2023",
+        "wiptecResponsibilities": 
+            "Offered mentorship and training to new entry-level hires & Helped facilitate the resolution of communication challenges between English-speaking and French-speaking co-workers.",
+        "amzPosition": "Warehouse Associate",
+        "amzCompany": "YUL5 Amazon",
+        "amzDuration": "11/2022 - 04/2023",
+        "amzResponsibilities": 
+            "Frequently collaborated in small, well-coordinated teams of 2-3 workers to handle the transportation of bulky packages inside the warehouse.",
+        "maxiPosition": "General Help Clerk",
+        "maxiCompany": "Maxi Greenfield Park",
+        "maxiDuration": "06/2022 - 11/2022",
+        "maxiResponsibilities": 
+            "Contributed to handling challenging situations involving disruptive individuals in the parking lot, ensuring a safe and comfortable environment for potential clients and customers.",
+        "imerysPosition": "Admin and IT support",
+        "imerysCompany": "Imerys Canada Inc",
+        "imerysDuration": "02/26/2024 - Present",
+        "imerysResponsibilities": "Contributed to financial documentation on financial platform as well providing general IT support for Imerys devices."
+    }
 }

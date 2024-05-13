@@ -1,4 +1,116 @@
 {
-    "welcome": "Bonjour utilisateur",
-    "language": "French"
+
+    "aboutSection": {
+        "skillsTitle": "Compétences",
+        "educationTitle": "Éducation",
+        "educationChamplain": "Collège Champlain St-Lambert - Informatique",
+        "educationHeritage": "École secondaire Heritage Regional",
+        "title": "À propos de moi",
+        "aboutContent": "Je suis un développeur full stack actuellement en dernière année d'une formation de 3 ans en informatique au Collège Champlain St-Lambert, vivant à Longueuil, Québec, Canada. J'ai une vaste expérience de travail avec divers langages de programmation, frameworks et outils informatiques, ainsi que dans l'analyse financière et comptable. Je suis à l'écoute, désireux d'améliorer mes compétences et mon expertise. Actuellement, je suis engagé à temps plein dans un poste de soutien en inventaire, finance et informatique chez Imerys Canada."
+      },
+
+      "navbar": {
+        "about": "À propos",
+        "hobbies": "Loisirs",
+        "experience": "Expérience",
+        "skills": "Compétences",
+        "projects": "Projets",
+        "contact": "Contact"
+      },
+        
+      
+  
+      "banner": {
+        "subtitle": "Développeur Full Stack avec expérience en Finance & Comptabilité"
+    },
+    
+    "emailSection": {
+        "hook": "Prenez contact",
+        "cvDownloadLabel": "Télécharger mon CV",
+        "nameLabel": "Nom",
+        "namePlaceholder": "Entrez votre nom",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "votreemail@exemple.com",
+        "subjectLabel": "Sujet",
+        "subjectPlaceholder": "Entrez le sujet",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Entrez le contenu du message",
+        "sendEmailLabel": "Envoyer l'e-mail",
+        "sentNotificationMsg": "E-mail envoyé avec succès !"
+    },
+  
+    "footer":{
+        "copyrightText": "Tous droits réservés."
+    },
+    
+  
+  "hobbiesSection":{
+    "title": "Loisirs",
+    "hobbyName1": "Jeux vidéo",
+    "hobbyDescription1": "Bien que je ne joue pas autant ces jours-ci, quand je le fais, c'est généralement dans le domaine des jeux multijoueurs avec chat vocal. Récemment, j'ai été accro à SCP Secret Laboratory. Vous pourriez me trouver sur Steam sous le pseudo AtlasTerra, mais juste un avertissement, je ne suis pas souvent disponible ces jours-ci.",
+    "hobbyName2": "Livres audio",
+    "hobbyDescription2": "Je suis autrefois passionné de lecture, mais de nos jours, je me suis tourné vers les livres audio. Mes goûts varient énormément, de l'histoire à la science-fiction, en passant par l'horreur et même les autobiographies. En ce moment, je suis plongé dans 'Simetierre' de Stephen King, et avant cela, j'écoutais l'autobiographie d'Eleanor Roosevelt.",
+    "hobbyName3": "Organisation numérique & passion pour la technologie",
+    "hobbyDescription3": "Quand il s'agit de garder ma vie numérique en ordre, je suis tout à fait pour la sauvegarde, la catégorisation et la sauvegarde de mes fichiers sur OneDrive. Fixer des objectifs et des échéances me permet de rester sur la bonne voie. Par exemple, au début de 2023, j'ai investi dans la construction de mon propre PC, ce qui a été une entreprise coûteuse et chronophage, mais totalement valable pour moi personnellement."
+},
+
+  
+"projectsSection":{
+    "petClinicTitle": "Clinique Vétérinaire PetClinic",
+    "petClinicDescription": "Petclinic est un projet Full-stack multi-sections, développé et travaillé par des étudiants en informatique du Collège Champlain - St. Lambert, comme moi-même. Le projet compte environ 30 contributeurs étudiants chaque semestre d'automne. J'ai fait partie de la fonctionnalité d'authentification au sein d'un groupe de 6 étudiants. L'une des principales contributions que j'ai apportées a été de refaire la fonctionnalité de déconnexion et la gestion de session. L'application Web multicouche était destinée aux vétérinaires et aux propriétaires d'animaux domestiques, offrant des services tels que la planification et la réservation de rendez-vous, ainsi que des services d'authentification et de messagerie. Le projet a utilisé Java, Spring Boot, AngularJS, SQL, et d'autres outils comme Jacoco et Docker. Ainsi que les méthodologies Agile et Scrum.",
+    "rpaTitle": "Rabia Patel Art",
+    "rpaDescription": "Ce projet consistait à développer une application Web de commerce électronique complète en 3 couches au sein d'une équipe de 4 personnes, avec des fonctionnalités clés comprenant un panier d'achat, une galerie, une page de détails, et une page de contact avec une option de demande de commission. Les membres de l'équipe étaient moi-même, ma sœur Dahlia James, William Chalifoux chargé des tâches difficiles, et Henna Cheung aidant à la documentation. Les rôles d'utilisateur tels que utilisateur, artiste et administrateur ont été implémentés avec une authentification sécurisée. Le processus de paiement a utilisé Square, et des services de messagerie ont été intégrés. Les technologies utilisées comprenaient Java, Spring Boot, React, MySQL, ainsi que des outils comme Jira, Docker et Git, avec les méthodologies Agile et Scrum guidant le projet.",
+    "homeInvasionTitle": "Détecteur d'Intrusion Domestique",
+    "homeInvasionDescription": "Développé en collaboration dans une équipe de 3 personnes, ce projet était axé sur la création d'un dispositif de sécurité utilisant la technologie à base d'Arduino Nano, doté de capteurs de mouvement et de son pour une détection précise des intrusions. Les composants comprenaient le capteur de détection sonore KY-037 et le capteur de mouvement PIR. Python a été utilisé pour la programmation, avec PyCharm comme environnement de développement, et MongoDB pour le stockage de données. Ce projet a mis en valeur l'expertise de l'équipe en matière d'intégration matérielle et de méthodologies de développement IoT.",
+    "geoAppTitle": "GeoApp",
+    "geoAppDescription": "Cette petite application Xcode amusante permet aux utilisateurs d'apprendre et de tester leurs connaissances sur une grande variété de nations dans le monde. Créée comme projet final pour un cours de développement mobile iOS au Collège Champlain St-Lambert, l'application n'est pas accessible sur l'App Store en raison du manque de certifications requises. Cependant, une vidéo de démonstration de l'application est disponible pour ceux qui souhaitent la voir en action.",
+    "adventureLyticalTitle": "AdventureLytical Coin Rush",
+    "adventureLyticalDescription": "AdventureLytical Coin Rush est un jeu de plateforme 2D simple et amusant développé en hiver 2022 dans le cadre d'un projet final pour un cours de développement de jeux Unity. Il a été créé à l'aide de l'environnement de développement Unity et impliquait une équipe de 4 personnes : moi-même, ma sœur Dahlia, Kamilah Raaniya Hatteea et Brandon Lévis. L'objectif du jeu était de naviguer à travers 3 niveaux sans tomber de la carte ou toucher des pointes mortelles, avec la possibilité de collecter des pièces en cours de route. Bien que le jeu ne soit pas accessible au public, le référentiel est disponible, et une vidéo de démonstration du gameplay est accessible en cliquant sur l'icône du bouton de lecture ci-dessus."
+},
+
+  
+  
+"skillsSection":{
+    "title": "Compétences",
+    "languagesFrameworksTitle": "Langages IT, Frameworks & Scripting",
+    "languagesFrameworksProficient": "Maîtrise : SQL, Java, Swift, HTML, Angular, React, CSS, JS, C#",
+    "languagesFrameworksFamiliar": "Connaissances : ASP.NET, Python, AJAX, PHP, C++, NodeJS",
+    "itToolsTitle": "Outils IT",
+    "itToolsList": "Eclipse, Netbeans, MS Visual Studio, Postman, Lucidchart, XCode, PyCharm, Jira, Figma, Spring, IntelliJ IDEA, Git, Github, Docker",
+    "dbManagementTitle": "Gestion de Bases de Données",
+    "dbManagementList": "MS SQL Server, Postgre SQL, MySQL, MongoDB",
+    "interpersonalSkillsTitle": "Compétences Interpersonnelles",
+    "interpersonalSkillsList": "Éthique de travail, Écoute active, Travail d'équipe, Adaptabilité",
+    "financeAccountingTitle": "Fondamentaux de la Finance & de la Comptabilité",
+    "financeAccountingList": "Analyse des États Financiers, Principes Budgétaires, Gestion des Coûts, Documentation Système",
+    "itSupportTitle": "Support IT de Base pour Ordinateur Portable",
+    "itSupportList": "Configuration et Installation d'Imprimantes et de Fax, Installation et Configuration de Logiciels, Dépannage de Base de Réseau"
+},
+
+  
+  
+"workExperienceSection":{
+    "workExpTitle": "Expérience Professionnelle",
+    "wiptecPosition": "Associé d'Entrepôt",
+    "wiptecCompany": "Wiptec Inc",
+    "wiptecDuration": "04/2023 - 08/2023",
+    "wiptecResponsibilities": 
+        "Offert mentorat et formation aux nouvelles recrues de niveau d'entrée & Aidé à faciliter la résolution des défis de communication entre les collègues anglophones et francophones.",
+    "amzPosition": "Associé d'Entrepôt",
+    "amzCompany": "Amazon YUL5",
+    "amzDuration": "11/2022 - 04/2023",
+    "amzResponsibilities": 
+        "Collaboré fréquemment au sein de petites équipes bien coordonnées de 2 à 3 travailleurs pour manipuler le transport de colis volumineux à l'intérieur de l'entrepôt.",
+    "maxiPosition": "Commis Aide Générale",
+    "maxiCompany": "Maxi Greenfield Park",
+    "maxiDuration": "06/2022 - 11/2022",
+    "maxiResponsibilities": 
+        "Contribué à la gestion de situations difficiles impliquant des individus perturbateurs sur le parking, assurant un environnement sûr et confortable pour les clients potentiels et les clients.",
+    "imerysPosition": "Support Admin et IT",
+    "imerysCompany": "Imerys Canada Inc",
+    "imerysDuration": "26/02/2024 - Présent",
+    "imerysResponsibilities": "Contribué à la documentation financière sur la plateforme financière tout en fournissant un support informatique général pour les appareils Imerys."
 }
+
+}
+  

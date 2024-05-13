@@ -3,9 +3,12 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next'; 
+
 import Link from "next/link";
 
 const Banner = () => {
+  const { t } = useTranslation();
     return (
         <section className="lg:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -40,7 +43,8 @@ const Banner = () => {
                 /> */}
               </h1>
               <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                Full Stack Developer & IT Enthusiast
+              {t('banner.subtitle')}
+              
               </p>
               {/* <div>
                 <Link

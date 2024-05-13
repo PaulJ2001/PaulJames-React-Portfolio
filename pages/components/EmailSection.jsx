@@ -9,10 +9,12 @@ import {
   AiFillInstagram,
   AiFillTwitterCircle,
 } from "react-icons/ai";
+import { useTranslation } from 'react-i18next'; 
 import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
+  const { t } = useTranslation();
   const form = useRef();
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [showNotification, setShowNotification] = useState(false);
@@ -47,15 +49,15 @@ const EmailSection = () => {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-10">
+      <div>
         <h5 className="text-xl font-bold text-white my-2">
-        Get in Touch
+        {t('emailSection.hook')}
           {/* Let&apos;s Connect */}
         </h5>
         <div className="mt-12">
   <a href="https://www.dropbox.com/scl/fi/td3qrg3uyk92boflyu0u0/PaulJames_English_IT_Resume_PDFVersion.pdf?dl=1">
     <button className="bg-primary-500 border border-white hover:bg-primary-600 hover:border-primary-600 text-white font-medium py-2.5 px-5 rounded-lg">
-      Download My CV
+      {t('emailSection.cvDownloadLabel')}
     </button>
   </a>
 </div>
@@ -121,7 +123,7 @@ const EmailSection = () => {
               htmlFor="user_name"
               className="text-white block mb-2 text-sm font-medium"
             >
-              Name
+              {t('emailSection.nameLabel')}
             </label>
             <input
               name="user_name"
@@ -129,7 +131,7 @@ const EmailSection = () => {
               id="user_name"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Enter name"
+              placeholder= {t('emailSection.namePlaceholder')}
             />
           </div>
           <div className="mb-6">
@@ -137,7 +139,8 @@ const EmailSection = () => {
               htmlFor="email"
               className="text-white block mb-2 text-sm font-medium"
             >
-              Email
+              {t('emailSection.emailLabel')}
+
             </label>
             <input
               name="user_email"
@@ -145,7 +148,7 @@ const EmailSection = () => {
               id="user_email"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="youremail@email.com"
+              placeholder= {t('emailSection.emailPlaceholder')}
             />
           </div>
           <div className="mb-6">
@@ -153,7 +156,7 @@ const EmailSection = () => {
               htmlFor="subject"
               className="text-white block text-sm mb-2 font-medium"
             >
-              Subject
+              {t('emailSection.subjectLabel')}
             </label>
             <input
               name="user_subject"
@@ -161,7 +164,7 @@ const EmailSection = () => {
               id="user_subject"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Enter subject"
+              placeholder= {t('emailSection.subjectPlaceholder')}
             />
           </div>
           <div className="mb-6">
@@ -169,27 +172,27 @@ const EmailSection = () => {
               htmlFor="message"
               className="text-white block text-sm mb-2 font-medium"
             >
-              Message
+              {t('emailSection.messageLabel')}
             </label>
             <textarea
               name="message"
               id="message"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Enter message"
+              placeholder= {t('emailSection.messagePlaceholder')}
             ></textarea>
           </div>
           <button
             type="submit"
-            className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+            className="bg-primary-500 border border-white hover:bg-primary-600 hover:border-primary-600 text-white font-medium py-2.5 px-5 rounded-lg"
           >
-            Send Message
+            {t('emailSection.sendEmailLabel')}
           </button>
         </form>
         {/* )} */}
         {showNotification && (
           <div className="fixed bottom-0 right-0 mb-8 mr-8 bg-green-500 text-white py-2 px-4 rounded-lg">
-            Email sent successfully!
+            {t('emailSection.sentNotificationMsg')}
           </div>
         )}
       </div>
