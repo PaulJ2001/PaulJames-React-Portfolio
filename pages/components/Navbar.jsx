@@ -7,7 +7,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
 import { useTranslation } from 'react-i18next';
-import '../../public/languageConfig';
+import '../../outside-components/languageConfig';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
 
