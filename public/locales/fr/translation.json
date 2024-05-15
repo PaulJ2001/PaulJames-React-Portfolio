@@ -73,8 +73,8 @@
 "skillsSection":{
     "title": "Compétences",
     "languagesFrameworksTitle": "Langages IT, Frameworks & Scripting",
-    "languagesFrameworksProficient": "Maîtrise : SQL, Java, Swift, HTML, Angular, React, CSS, JS, C#",
-    "languagesFrameworksFamiliar": "Connaissances : ASP.NET, Python, AJAX, PHP, C++, NodeJS",
+    "languagesFrameworksProficient": "SQL, Java, Swift, HTML, Angular, React, CSS, JS, C#",
+    "languagesFrameworksFamiliar": "ASP.NET, Python, AJAX, PHP, C++, NodeJS",
     "itToolsTitle": "Outils IT",
     "itToolsList": "Eclipse, Netbeans, MS Visual Studio, Postman, Lucidchart, XCode, PyCharm, Jira, Figma, Spring, IntelliJ IDEA, Git, Github, Docker",
     "dbManagementTitle": "Gestion de Bases de Données",

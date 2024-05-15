@@ -71,8 +71,8 @@
     "skillsSection":{
         "title": "Skills",
         "languagesFrameworksTitle": "IT Languages, Frameworks & Scripting",
-        "languagesFrameworksProficient": "Proficient: SQL, Java, Swift, HTML, Angular, React, CSS, JS, C#",
-        "languagesFrameworksFamiliar": "Familiar: ASP.NET, Python, AJAX, PHP, C++, NodeJS",
+        "languagesFrameworksProficient": "SQL, Java, Swift, HTML, Angular, React, CSS, JS, C#",
+        "languagesFrameworksFamiliar": "ASP.NET, Python, AJAX, PHP, C++, NodeJS",
         "itToolsTitle": "IT Tools",
         "itToolsList": "Eclipse, Netbeans, MS Visual Studio, Postman, Lucidchart, XCode, PyCharm, Jira, Figma, Spring, IntelliJ IDEA, Git, Github, Docker",
         "dbManagementTitle": "Database Management",
@@ -84,8 +84,6 @@
         "itSupportTitle": "Basic IT Laptop Support",
         "itSupportList": 
             "Printer and Fax Configuration and Setup, Software Installation & Configuration, Basic Network Troubleshooting"
-            
-
     },
 
     "workExperienceSection":{
